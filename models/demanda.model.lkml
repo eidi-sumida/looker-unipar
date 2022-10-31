@@ -31,6 +31,10 @@ explore: demanda_mensal_winsorized_sem_setembroo {}
 
 explore: demanda_meio_mes {}
 
+explore: forecast_ia_unipar {}
+
+explore: tabela_para_looker_unipar {}
+
 explore: demanda_semanal_s66 {}
 
 explore: demanda_s66 {}

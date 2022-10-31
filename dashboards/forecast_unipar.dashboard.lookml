@@ -1,10 +1,10 @@
-- dashboard: forecast_dashboarding
-  title: Forecast Dashboarding
+- dashboard: dashboard_forecast
+  title: Dashboard Forecast
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: uoTE2MLjf6LuX8idRkLNTy
+  preferred_slug: Agq9EcFLWGzrg5LtJV4yNB
   elements:
   - title: Last three months forecast
     name: Last three months forecast
@@ -63,6 +63,7 @@
             id: forecast_tres_meses.forecast, name: Forecast}], showLabels: true,
         showValues: true, maxValue: 12500, unpinAxis: false, tickDensity: custom,
         tickDensityCustom: 11, type: linear}]
+    x_axis_label: Year - Month
     limit_displayed_rows_values:
       show_hide: hide
       first_last: first
@@ -79,7 +80,7 @@
     defaults_version: 1
     listen: {}
     row: 0
-    col: 0
+    col: 15
     width: 9
     height: 10
   - title: Untitled
@@ -106,9 +107,9 @@
     defaults_version: 1
     listen: {}
     row: 10
-    col: 0
+    col: 15
     width: 3
-    height: 3
+    height: 4
   - title: Untitled
     name: Untitled (2)
     model: forecast
@@ -134,60 +135,9 @@
     defaults_version: 1
     listen: {}
     row: 10
-    col: 3
+    col: 18
     width: 3
-    height: 3
-  - title: Historical demand from jan/19 to aug/22
-    name: Historical demand from jan/19 to aug/22
-    model: demanda
-    explore: demanda_mensal_alterado_sem_setembro
-    type: looker_line
-    fields: [demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma, demanda_mensal_alterado_sem_setembro.data_relativa_month]
-    sorts: [demanda_mensal_alterado_sem_setembro.data_relativa_month]
-    limit: 500
-    x_axis_gridlines: true
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle_outline
-    show_value_labels: false
-    label_density: 25
-    x_axis_scale: ordinal
-    y_axis_combined: true
-    show_null_points: true
-    interpolation: linear
-    y_axes: [{label: '', orientation: left, series: [{axisId: demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma,
-            id: demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma, name: Fila
-              Prog Fat Soma}], showLabels: true, showValues: true, maxValue: 12500,
-        minValue: 0, unpinAxis: false, tickDensity: custom, tickDensityCustom: 22,
-        type: linear}]
-    series_types:
-      demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma: column
-    series_colors:
-      demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma: "#31b221"
-    series_point_styles:
-      demanda_mensal_alterado_sem_setembro.fila_prog_fat_soma: diamond
-    x_axis_datetime_label: "%Y-%m"
-    x_axis_label_rotation: 90
-    defaults_version: 1
-    listen: {}
-    row: 10
-    col: 9
-    width: 15
-    height: 9
+    height: 4
   - title: Untitled
     name: Untitled (3)
     model: forecast
@@ -212,66 +162,9 @@
     defaults_version: 1
     listen: {}
     row: 10
-    col: 6
+    col: 21
     width: 3
-    height: 3
-  - title: Historical Demand x Forecast Value
-    name: Historical Demand x Forecast Value
-    model: demanda
-    explore: demanda_mensal_com_forecastt
-    type: looker_line
-    fields: [demanda_mensal_com_forecastt.data_relativa_month, demanda_mensal_com_forecastt.forecast,
-      demanda_mensal_com_forecastt.fila__prog_fat_soma, demanda_mensal_com_forecastt.forecasts,
-      demanda_mensal_com_forecastt.fila_prog_fat_soma]
-    sorts: [demanda_mensal_com_forecastt.data_relativa_month]
-    limit: 500
-    filter_expression: "${demanda_mensal_com_forecastt.data_relativa_month} >= date(2021,\
-      \ 1, 1)"
-    x_axis_gridlines: true
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle_outline
-    show_value_labels: true
-    label_density: 25
-    x_axis_scale: ordinal
-    y_axis_combined: true
-    show_null_points: true
-    interpolation: linear
-    y_axes: [{label: '', orientation: left, series: [{axisId: demanda_mensal_com_forecastt.forecasts,
-            id: demanda_mensal_com_forecastt.forecasts, name: Forecasts}, {axisId: demanda_mensal_com_forecastt.fila__prog_fat_soma,
-            id: demanda_mensal_com_forecastt.fila__prog_fat_soma, name: Fila Prog
-              Fat Soma}], showLabels: true, showValues: true, maxValue: 10000, minValue: 2000,
-        unpinAxis: false, tickDensity: custom, tickDensityCustom: 27, type: linear}]
-    series_types: {}
-    series_colors:
-      demanda_mensal_com_forecastt.fila__prog_fat_soma: "#1ff72d"
-      demanda_mensal_com_forecastt.forecasts: "#0b590b"
-    series_point_styles:
-      demanda_mensal_com_forecastt.fila__prog_fat_soma: diamond
-      demanda_mensal_com_forecastt.forecasts: diamond
-    label_color: ["#000000"]
-    x_axis_label_rotation: 290
-    hidden_fields: [demanda_mensal_com_forecastt.forecast, demanda_mensal_com_forecastt.fila_prog_fat_soma]
-    defaults_version: 1
-    listen: {}
-    row: 0
-    col: 9
-    width: 15
-    height: 10
+    height: 4
   - title: Untitled (Copy 2)
     name: Untitled (Copy 2)
     model: forecast
@@ -299,10 +192,10 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 13
-    col: 6
+    row: 14
+    col: 21
     width: 3
-    height: 3
+    height: 4
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: forecast
@@ -330,10 +223,10 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 13
-    col: 3
+    row: 14
+    col: 18
     width: 3
-    height: 3
+    height: 4
   - title: Untitled
     name: Untitled (4)
     model: forecast
@@ -361,21 +254,83 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 13
-    col: 0
+    row: 14
+    col: 15
     width: 3
-    height: 3
-  - title: Tabela
-    name: Tabela
-    model: forecast
-    explore: forecast_tres_meses
+    height: 4
+  - title: Historical Demand x Forecast Unipar x Forecast IA
+    name: Historical Demand x Forecast Unipar x Forecast IA
+    model: demanda
+    explore: forecast_ia_unipar
+    type: looker_line
+    fields: [forecast_ia_unipar.data_relativa_month, forecast_ia_unipar.atual, forecast_ia_unipar.forecast_ia,
+      forecast_ia_unipar.forecast_unipar, forecast_ia_unipar.Atual, forecast_ia_unipar.Forecast_Unipar,
+      forecast_ia_unipar.Forecast_IA]
+    sorts: [forecast_ia_unipar.data_relativa_month]
+    limit: 500
+    x_axis_gridlines: true
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: circle
+    show_value_labels: true
+    label_density: 25
+    x_axis_scale: ordinal
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: Demand, orientation: left, series: [{axisId: forecast_ia_unipar.Atual,
+            id: forecast_ia_unipar.Atual, name: Atual}, {axisId: forecast_ia_unipar.Forecast_Unipar,
+            id: forecast_ia_unipar.Forecast_Unipar, name: Forecast Unipar}, {axisId: forecast_ia_unipar.Forecast_IA,
+            id: forecast_ia_unipar.Forecast_IA, name: Forecast IA}], showLabels: true,
+        showValues: true, maxValue: 11000, minValue: 3000, valueFormat: '', unpinAxis: false,
+        tickDensity: custom, tickDensityCustom: 17, type: linear}]
+    x_axis_label: Year - Month
+    font_size: '10'
+    series_colors:
+      forecast_ia_unipar.Atual: "#024f08"
+      forecast_ia_unipar.Forecast_Unipar: "#54d109"
+      forecast_ia_unipar.Forecast_IA: "#e8680f"
+    series_point_styles:
+      forecast_ia_unipar.Forecast_IA: diamond
+      forecast_ia_unipar.Forecast_Unipar: diamond
+      forecast_ia_unipar.Atual: diamond
+    x_axis_datetime_label: "%Y-%m"
+    x_axis_label_rotation: 310
+    hidden_fields: [forecast_ia_unipar.atual, forecast_ia_unipar.forecast_ia, forecast_ia_unipar.forecast_unipar]
+    defaults_version: 1
+    listen: {}
+    row: 0
+    col: 0
+    width: 15
+    height: 15
+  - title: Forecast table with values of MAPE
+    name: Forecast table with values of MAPE
+    model: demanda
+    explore: tabela_para_looker_unipar
     type: looker_grid
-    fields: [forecast_tres_meses.data_month, forecast_tres_meses.forecast, forecast_tres_meses.mape,
-      forecast_tres_meses.wmape]
-    sorts: [forecast_tres_meses.data_month desc]
+    fields: [tabela_para_looker_unipar.data_month, tabela_para_looker_unipar.atual,
+      tabela_para_looker_unipar.forecast_ia, tabela_para_looker_unipar.forecast_unipar,
+      tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.Atual,
+      tabela_para_looker_unipar.Forecast_IA, tabela_para_looker_unipar.MAPE_IA, tabela_para_looker_unipar.Forecast_Unipar,
+      tabela_para_looker_unipar.MAPE_Unipar]
+    sorts: [tabela_para_looker_unipar.atual desc]
     limit: 500
     show_view_names: false
-    show_row_numbers: true
+    show_row_numbers: false
     transpose: false
     truncate_text: true
     hide_totals: false
@@ -389,36 +344,55 @@
     rows_font_size: '12'
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    color_application:
-      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
-      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
     show_sql_query_menu_options: false
     show_totals: true
     show_row_totals: true
     truncate_header: false
     series_cell_visualizations:
-      forecast_tres_meses.mape:
+      tabela_para_looker_unipar.Atual:
         is_active: false
     series_text_format:
-      forecast_tres_meses.wmape:
-        bg_color: "#71b567"
-        fg_color: "#120607"
-      forecast_tres_meses.mape:
-        bg_color: "#b3e0ad"
-        fg_color: "#0a0606"
-      forecast_tres_meses.data_month:
-        bg_color: "#b3e0ad"
-        fg_color: "#080808"
-      forecast_tres_meses.forecast:
-        bg_color: "#71b567"
-        fg_color: "#000000"
-    header_font_color: "#000000"
-    header_background_color: "#7aff73"
-    series_value_format: {}
-    series_types: {}
+      tabela_para_looker_unipar.Atual:
+        bg_color: "#93ba8b"
+      tabela_para_looker_unipar.MAPE_IA:
+        bg_color: "#93ba8b"
+      tabela_para_looker_unipar.MAPE_Unipar:
+        bg_color: "#93ba8b"
+      tabela_para_looker_unipar.Forecast_Unipar:
+        bg_color: "#b5d4a6"
+      tabela_para_looker_unipar.Forecast_IA:
+        bg_color: "#b5d4a6"
+      tabela_para_looker_unipar.data_month:
+        bg_color: "#b5d4a6"
+    header_background_color: "#c6d6bb"
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
     defaults_version: 1
+    hidden_fields: [tabela_para_looker_unipar.forecast_ia, tabela_para_looker_unipar.forecast_unipar,
+      tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.atual]
+    series_types: {}
     listen: {}
-    row: 16
+    row: 15
     col: 0
-    width: 9
+    width: 15
     height: 3
