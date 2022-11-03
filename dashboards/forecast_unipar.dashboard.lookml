@@ -6,11 +6,11 @@
   refresh: 1 hour
   preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
   embed_style:
-  #   background_color: "#0c4c12"
+    #   background_color: "#0c4c12"
     show_title: false
-  #   title_color: "#228b22"
+    #   title_color: "#228b22"
     tile_text_color: "#0c4c12"
-  #   tile_background_color: "#c8fac3"
+    #   tile_background_color: "#c8fac3"
   elements:
   - title: Untitled
     name: Untitled
@@ -105,7 +105,7 @@
     filter_expression: "${forecast_tres_meses.data_month} = date(2022, 8, 1)"
     custom_color_enabled: true
     show_single_value_title: true
-    show_comparison: true
+    show_comparison: false
     comparison_type: progress_percentage
     comparison_reverse_colors: false
     show_comparison_label: false
@@ -403,7 +403,7 @@
     filter_expression: "${forecast_tres_meses.data_month} = date(2022, 6, 1)"
     custom_color_enabled: true
     show_single_value_title: true
-    show_comparison: true
+    show_comparison: false
     comparison_type: progress_percentage
     comparison_reverse_colors: false
     show_comparison_label: false
@@ -424,6 +424,7 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
+    listen: {}
     row: 13
     col: 20
     width: 4
@@ -439,7 +440,7 @@
     filter_expression: "${forecast_tres_meses.data_month} = date(2022, 7, 1)"
     custom_color_enabled: true
     show_single_value_title: true
-    show_comparison: true
+    show_comparison: false
     comparison_type: progress_percentage
     comparison_reverse_colors: false
     show_comparison_label: false
@@ -460,6 +461,7 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
+    listen: {}
     row: 16
     col: 20
     width: 4
