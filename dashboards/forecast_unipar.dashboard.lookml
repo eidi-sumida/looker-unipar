@@ -1,3 +1,4 @@
+
 - dashboard: forecast_dashboard
   title: Forecast Dashboard
   layout: newspaper
@@ -35,7 +36,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 13
+    row: 15
     col: 16
     width: 4
     height: 3
@@ -63,7 +64,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 16
+    row: 18
     col: 16
     width: 4
     height: 3
@@ -90,7 +91,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 19
+    row: 21
     col: 16
     width: 4
     height: 3
@@ -127,7 +128,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 19
+    row: 21
     col: 20
     width: 4
     height: 3
@@ -192,10 +193,10 @@
     hidden_fields: [forecast_ia_unipar.atual, forecast_ia_unipar.forecast_ia, forecast_ia_unipar.forecast_unipar]
     defaults_version: 1
     listen: {}
-    row: 0
-    col: 3
-    width: 13
-    height: 19
+    row: 3
+    col: 0
+    width: 16
+    height: 18
   - title: ''
     name: ''
     model: demanda
@@ -275,9 +276,9 @@
     series_types: {}
     title_hidden: true
     listen: {}
-    row: 19
-    col: 3
-    width: 13
+    row: 21
+    col: 0
+    width: 16
     height: 3
   - name: " (2)"
     type: text
@@ -287,7 +288,7 @@
       width="200" height="72"/> </a>
     row: 0
     col: 0
-    width: 3
+    width: 24
     height: 3
   - title: Last three months forecast
     name: Last three months forecast
@@ -388,10 +389,10 @@
     labelColorEnabled: false
     labelColor: "#FFF"
     listen: {}
-    row: 0
+    row: 3
     col: 16
     width: 8
-    height: 13
+    height: 12
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: demanda
@@ -425,7 +426,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 13
+    row: 18
     col: 20
     width: 4
     height: 3
@@ -462,7 +463,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 16
+    row: 15
     col: 20
     width: 4
     height: 3
