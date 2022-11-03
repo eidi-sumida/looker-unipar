@@ -7,13 +7,12 @@
   preferred_slug: mVONMarWaEyyuQojfMUBnP
   embed_style:
     background_color: "#0c4c12"
-    tile_background_color: "#00802b"
-    title_color: "#29fd3c"
-    tile_text_color: "#29fd3c"
+    tile_background_color: "#98fb98"
+    title_color: "#228b22"
+    tile_text_color: "#228b22"
     show_title: true
     #title_color: "#29fd3c"
     # show_filters_bar: true
-    # tile_text_color: 0c4c12
 
   elements:
   - title: Last three months forecast
