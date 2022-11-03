@@ -17,7 +17,7 @@
   elements:
   - title: Last three months forecast
     name: Last three months forecast
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: looker_line
     fields: [forecast_tres_meses.forecast, forecast_tres_meses.data_month]
@@ -94,7 +94,7 @@
     height: 10
   - title: Untitled
     name: Untitled
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.forecast, forecast_tres_meses.data_month]
@@ -121,7 +121,7 @@
     height: 4
   - title: Untitled
     name: Untitled (2)
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.forecast, forecast_tres_meses.data_month]
@@ -149,7 +149,7 @@
     height: 4
   - title: Untitled
     name: Untitled (3)
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.forecast, forecast_tres_meses.data_month]
@@ -176,7 +176,7 @@
     height: 4
   - title: Untitled (Copy 2)
     name: Untitled (Copy 2)
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
@@ -207,7 +207,7 @@
     height: 4
   - title: Untitled (Copy)
     name: Untitled (Copy)
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
@@ -238,7 +238,7 @@
     height: 4
   - title: Untitled
     name: Untitled (4)
-    model: forecast
+    model: demanda
     explore: forecast_tres_meses
     type: single_value
     fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
