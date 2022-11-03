@@ -72,7 +72,7 @@ view: tabela_para_looker_unipar {
   measure: Atual {
     type:  number
     sql: ${TABLE}.atual ;;
-    html: <p style="color: black"><b>{{ rendered_value }}</b></p>  ;;
+    html: <p style="color: black">{{ rendered_value }}</p>  ;;
   }
 
   measure: MAPE_Unipar {
