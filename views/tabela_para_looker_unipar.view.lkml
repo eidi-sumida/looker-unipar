@@ -60,6 +60,14 @@ view: tabela_para_looker_unipar {
   measure: MAPE_Unipar {
     type:  number
     sql: ${TABLE}.MAPE_unipar ;;
+    html:
+      {% if value > 0.60 %}
+      <p style="color: red"><b>{{ rendered_value }}</b></p>
+      {% elsif value > 0.30 %}
+      <p style="color: orange"><b>{{ rendered_value }}</b></p>
+      {% else %}
+      <p style="color: green"><b>{{ rendered_value }}</b></p>
+      {% endif %};;
   }
 
   measure: MAPE_IA {
