@@ -1,5 +1,5 @@
 - dashboard: forecast_dashboard
-  title: FORECAST DASHBOARD
+  #title: FORECAST DASHBOARD
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
