@@ -284,7 +284,7 @@
     title_text: ''
     subtitle_text: ''
     body_text: <a href="https://www.unipar.com" target="_blank"><img src="https://github.com/eidi-sumida/looker-unipar/blob/master/logo.png?raw=true"
-      width="200" height="82"/> </a>
+      width="200" height="72"/> </a>
     row: 0
     col: 0
     width: 3
