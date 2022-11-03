@@ -45,3 +45,5 @@ explore: previsao_vendas {}
 explore: demanda_ordenada_data_completa {}
 
 explore: forecast_tres_meses {}
+
+explore: logo {}
