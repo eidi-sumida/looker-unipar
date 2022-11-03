@@ -7,8 +7,8 @@
   preferred_slug: PSJpVy0CZUFivxb508l17v
   embed_style:
     background_color: "#0c4c12"
-    #show_title: true
-    title_color: "#228b22"
+    show_title: false
+    #title_color: "#228b22"
     tile_text_color: "#228b22"
     tile_background_color: "#c8fac3"
   elements:
