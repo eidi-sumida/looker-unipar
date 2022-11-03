@@ -1,19 +1,15 @@
 - dashboard: dashboard_forecast
-  title: Dashboard Forecast
+  title: FORECAST DASHBOARD
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: mVONMarWaEyyuQojfMUBnP
+  preferred_slug: ADJBNIKhsJ6Ee60HtOFD8o
   embed_style:
     background_color: "#0c4c12"
-    tile_background_color: "#98fb98"
+    show_title: true
     title_color: "#228b22"
     tile_text_color: "#228b22"
-    show_title: true
-    #title_color: "#29fd3c"
-    # show_filters_bar: true
-
   elements:
   - title: Last three months forecast
     name: Last three months forecast
@@ -192,7 +188,7 @@
     enable_conditional_formatting: true
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    custom_color: "#04c70c"
+    custom_color: "#187006"
     single_value_title: MAPE
     conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
         font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -223,7 +219,7 @@
     enable_conditional_formatting: true
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    custom_color: "#04c70c"
+    custom_color: "#187006"
     single_value_title: MAPE
     conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
         font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -254,7 +250,7 @@
     enable_conditional_formatting: true
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    custom_color: "#04c70c"
+    custom_color: "#187006"
     single_value_title: MAPE
     conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
         font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -308,10 +304,14 @@
         showValues: true, maxValue: 11000, minValue: 3000, valueFormat: '', unpinAxis: false,
         tickDensity: custom, tickDensityCustom: 17, type: linear}]
     x_axis_label: Year - Month
+    limit_displayed_rows_values:
+      show_hide: hide
+      first_last: first
+      num_rows: 0
     font_size: '10'
     series_colors:
       forecast_ia_unipar.Atual: "#024f08"
-      forecast_ia_unipar.Forecast_Unipar: "#54d109"
+      forecast_ia_unipar.Forecast_Unipar: "#0816a1"
       forecast_ia_unipar.Forecast_IA: "#e8680f"
     series_point_styles:
       forecast_ia_unipar.Forecast_IA: diamond
@@ -345,7 +345,7 @@
     hide_totals: false
     hide_row_totals: false
     size_to_fit: true
-    table_theme: white
+    table_theme: transparent
     limit_displayed_rows: false
     enable_conditional_formatting: false
     header_text_alignment: left
@@ -404,11 +404,10 @@
     row: 12
     col: 3
     width: 15
-    height: 4
+    height: 3
   - name: ''
     type: text
     title_text: ''
-    subtitle_text: ''
     body_text: <img src="https://www.unipar.com/wp-content/uploads/2021/01/TCUNIPAR.LOGOS_.220722.RGB_logotype.pref_.png"
       width="243" height="116"/>
     row: 0
