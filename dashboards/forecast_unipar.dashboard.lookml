@@ -8,9 +8,10 @@
   embed_style:
     background_color: "#0c4c12"
     tile_background_color: "#00802b"
+    title_color: "#29fd3c"
     tile_text_color: "#29fd3c"
-    # show_title: true
-    # title_color: "#29fd3c"
+    show_title: true
+    #title_color: "#29fd3c"
     # show_filters_bar: true
     # tile_text_color: 0c4c12
 
