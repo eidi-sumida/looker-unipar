@@ -1,16 +1,15 @@
-- dashboard: dashboard_forecast
+- dashboard: forecast_dashboard
   title: FORECAST DASHBOARD
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: ADJBNIKhsJ6Ee60HtOFD8o
+  preferred_slug: 0oy4Wv21dNE1lkYOEWZdtw
   embed_style:
     background_color: "#0c4c12"
     show_title: true
     title_color: "#228b22"
     tile_text_color: "#228b22"
-    tile_background_color: "#c8fac3"
   elements:
   - title: Last three months forecast
     name: Last three months forecast
@@ -405,7 +404,7 @@
     row: 12
     col: 3
     width: 15
-    height: 3
+    height: 4
   - name: ''
     type: text
     title_text: ''
