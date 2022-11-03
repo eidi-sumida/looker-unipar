@@ -4,15 +4,13 @@
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: Agq9EcFLWGzrg5LtJV4yNB
-
+  preferred_slug: mVONMarWaEyyuQojfMUBnP
   embed_style:
     background_color: "#0c4c12"
     # show_title: true
     # title_color: "#29fd3c"
     # show_filters_bar: true
-    # tile_background_color: "#29fd3c"
-    # tile_text_color: "0c4c12"
+    # tile_text_color: 0c4c12
 
   elements:
   - title: Last three months forecast
@@ -89,9 +87,9 @@
     defaults_version: 1
     listen: {}
     row: 0
-    col: 15
-    width: 9
-    height: 10
+    col: 18
+    width: 6
+    height: 9
   - title: Untitled
     name: Untitled
     model: demanda
@@ -115,9 +113,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 10
-    col: 15
-    width: 3
+    row: 9
+    col: 18
+    width: 4
     height: 4
   - title: Untitled
     name: Untitled (2)
@@ -143,9 +141,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 10
+    row: 13
     col: 18
-    width: 3
+    width: 4
     height: 4
   - title: Untitled
     name: Untitled (3)
@@ -170,9 +168,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 10
-    col: 21
-    width: 3
+    row: 17
+    col: 18
+    width: 4
     height: 4
   - title: Untitled (Copy 2)
     name: Untitled (Copy 2)
@@ -201,9 +199,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
-    col: 21
-    width: 3
+    row: 17
+    col: 22
+    width: 2
     height: 4
   - title: Untitled (Copy)
     name: Untitled (Copy)
@@ -232,9 +230,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
-    col: 18
-    width: 3
+    row: 13
+    col: 22
+    width: 2
     height: 4
   - title: Untitled
     name: Untitled (4)
@@ -263,9 +261,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
-    col: 15
-    width: 3
+    row: 9
+    col: 22
+    width: 2
     height: 4
   - title: Historical Demand x Forecast Unipar x Forecast IA
     name: Historical Demand x Forecast Unipar x Forecast IA
@@ -323,9 +321,9 @@
     defaults_version: 1
     listen: {}
     row: 0
-    col: 0
+    col: 3
     width: 15
-    height: 15
+    height: 12
   - title: Forecast table with values of MAPE
     name: Forecast table with values of MAPE
     model: demanda
@@ -401,7 +399,17 @@
       tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.atual]
     series_types: {}
     listen: {}
-    row: 15
-    col: 0
+    row: 12
+    col: 3
     width: 15
-    height: 3
+    height: 4
+  - name: ''
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: <img src="https://www.unipar.com/wp-content/uploads/2021/01/TCUNIPAR.LOGOS_.220722.RGB_logotype.pref_.png"
+      width="243" height="116"/>
+    row: 0
+    col: 0
+    width: 3
+    height: 4
