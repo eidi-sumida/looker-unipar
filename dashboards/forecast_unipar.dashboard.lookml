@@ -5,11 +5,11 @@
   description: ''
   refresh: 1 hour
   preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
-  # embed_style:
+  embed_style:
   #   background_color: "#0c4c12"
-  #   show_title: false
-  #   #title_color: "#228b22"
-  #   tile_text_color: "#228b22"
+    show_title: false
+  #   title_color: "#228b22"
+    tile_text_color: "#0c4c12"
   #   tile_background_color: "#c8fac3"
   elements:
   - title: Untitled
