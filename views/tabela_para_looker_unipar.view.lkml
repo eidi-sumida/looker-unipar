@@ -46,16 +46,33 @@ view: tabela_para_looker_unipar {
   measure: Forecast_IA{
     type:  number
     sql: ${TABLE}.forecast_ia ;;
+    html:
+      {% if MAPE_ia._value > 0.60 %}
+      <p style="color: #8c0303"><b>{{ rendered_value }}</b></p>
+      {% elsif MAPE_ia._value > 0.30 %}
+      <p style="color: #ff7300"><b>{{ rendered_value }}</b></p>
+      {% else %}
+      <p style="color: #088004"><b>{{ rendered_value }}</b></p>
+      {% endif %};;
   }
 
   measure: Forecast_Unipar{
     type:  number
     sql: ${TABLE}.forecast_unipar ;;
+    html:
+      {% if MAPE_unipar._value > 0.60 %}
+      <p style="color: #8c0303"><b>{{ rendered_value }}</b></p>
+      {% elsif MAPE_unipar._value > 0.30 %}
+      <p style="color: #ff7300"><b>{{ rendered_value }}</b></p>
+      {% else %}
+      <p style="color: #088004"><b>{{ rendered_value }}</b></p>
+      {% endif %};;
   }
 
   measure: Atual {
     type:  number
     sql: ${TABLE}.atual ;;
+    html: <p style="color: black"><b>{{ rendered_value }}</b></p>  ;;
   }
 
   measure: MAPE_Unipar {
