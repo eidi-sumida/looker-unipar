@@ -62,17 +62,25 @@ view: tabela_para_looker_unipar {
     sql: ${TABLE}.MAPE_unipar ;;
     html:
       {% if value > 0.60 %}
-      <p style="color: red"><b>{{ rendered_value }}</b></p>
+      <p style="color: #8c0303"><b>{{ rendered_value }}</b></p>
       {% elsif value > 0.30 %}
-      <p style="color: orange"><b>{{ rendered_value }}</b></p>
+      <p style="color: #ff7300"><b>{{ rendered_value }}</b></p>
       {% else %}
-      <p style="color: green"><b>{{ rendered_value }}</b></p>
+      <p style="color: #088004"><b>{{ rendered_value }}</b></p>
       {% endif %};;
   }
 
   measure: MAPE_IA {
     type:  number
     sql: ${TABLE}.MAPE_ia ;;
+    html:
+      {% if value > 0.60 %}
+      <p style="color: #8c0303"><b>{{ rendered_value }}</b></p>
+      {% elsif value > 0.30 %}
+      <p style="color: #ff7300"><b>{{ rendered_value }}</b></p>
+      {% else %}
+      <p style="color: #088004"><b>{{ rendered_value }}</b></p>
+      {% endif %};;
   }
 
 }
