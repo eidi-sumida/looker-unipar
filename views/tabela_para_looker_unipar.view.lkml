@@ -15,6 +15,7 @@ view: tabela_para_looker_unipar {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.data ;;
+    html: <p style="color: black"><b>{{ rendered_value }}</b></p>  ;;
   }
 
   dimension: forecast_unipar {
