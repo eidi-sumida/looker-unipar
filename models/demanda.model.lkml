@@ -1,4 +1,5 @@
 connection: "demanda_s66"
+connection: "forecast_last_3_months"
 
 # include all the views
 include: "/views/**/*.view"
@@ -42,3 +43,5 @@ explore: demanda_s66 {}
 explore: previsao_vendas {}
 
 explore: demanda_ordenada_data_completa {}
+
+explore: forecast_tres_meses {}
