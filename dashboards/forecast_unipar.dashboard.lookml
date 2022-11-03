@@ -1,10 +1,10 @@
 - dashboard: forecast_dashboard
-  #title: FORECAST DASHBOARD
+  title: Forecast Dashboard
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: PSJpVy0CZUFivxb508l17v
+  preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
   embed_style:
     background_color: "#0c4c12"
     show_title: false
@@ -114,76 +114,20 @@
     conditional_formatting_include_nulls: false
     custom_color: "#187006"
     single_value_title: MAPE
-    conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
-        font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+    conditional_formatting: [{type: greater than, value: 0.6, background_color: "#f7c59d",
+        font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0.3,
+        background_color: "#fa8f0b", font_color: "#ffe4b6", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
+        font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
     listen: {}
     row: 18
-    col: 22
-    width: 2
-    height: 3
-  - title: Untitled (Copy)
-    name: Untitled (Copy)
-    model: demanda
-    explore: forecast_tres_meses
-    type: single_value
-    fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
-    sorts: [forecast_tres_meses.mape desc]
-    limit: 500
-    filter_expression: "${forecast_tres_meses.data_month} = date(2022, 7, 1)"
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: true
-    comparison_type: progress_percentage
-    comparison_reverse_colors: false
-    show_comparison_label: false
-    enable_conditional_formatting: true
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    custom_color: "#187006"
-    single_value_title: MAPE
-    conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
-        font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
-          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
-        strikethrough: false, fields: !!null ''}]
-    series_types: {}
-    defaults_version: 1
-    listen: {}
-    row: 15
-    col: 22
-    width: 2
-    height: 3
-  - title: Untitled
-    name: Untitled (4)
-    model: demanda
-    explore: forecast_tres_meses
-    type: single_value
-    fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
-    sorts: [forecast_tres_meses.mape desc]
-    limit: 500
-    filter_expression: "${forecast_tres_meses.data_month} = date(2022, 6, 1)"
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: true
-    comparison_type: progress_percentage
-    comparison_reverse_colors: false
-    show_comparison_label: false
-    enable_conditional_formatting: true
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    custom_color: "#187006"
-    single_value_title: MAPE
-    conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
-        font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
-          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
-        strikethrough: false, fields: !!null ''}]
-    series_types: {}
-    defaults_version: 1
-    listen: {}
-    row: 12
     col: 22
     width: 2
     height: 3
@@ -297,7 +241,8 @@
         bg_color: "#b5d4a6"
       tabela_para_looker_unipar.data_month:
         bg_color: "#b5d4a6"
-    header_background_color: "#c6d6bb"
+    header_font_color: "#29fd3c"
+    header_background_color: "#0c4c12"
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_y_axis_labels: true
@@ -436,7 +381,80 @@
     valuePosition: right
     labelColorEnabled: false
     labelColor: "#FFF"
+    listen: {}
     row: 0
     col: 18
     width: 6
     height: 12
+  - title: Untitled (Copy)
+    name: Untitled (Copy)
+    model: demanda
+    explore: forecast_tres_meses
+    type: single_value
+    fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
+    sorts: [forecast_tres_meses.mape desc]
+    limit: 500
+    filter_expression: "${forecast_tres_meses.data_month} = date(2022, 6, 1)"
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: true
+    comparison_type: progress_percentage
+    comparison_reverse_colors: false
+    show_comparison_label: false
+    enable_conditional_formatting: true
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    custom_color: "#187006"
+    single_value_title: MAPE
+    conditional_formatting: [{type: greater than, value: 0.6, background_color: "#f7c59d",
+        font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0.3,
+        background_color: "#fa8f0b", font_color: "#ffe4b6", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
+        font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}]
+    series_types: {}
+    defaults_version: 1
+    row: 12
+    col: 22
+    width: 2
+    height: 3
+  - title: Untitled (Copy 4)
+    name: Untitled (Copy 4)
+    model: demanda
+    explore: forecast_tres_meses
+    type: single_value
+    fields: [forecast_tres_meses.mape, forecast_tres_meses.data_month]
+    sorts: [forecast_tres_meses.mape desc]
+    limit: 500
+    filter_expression: "${forecast_tres_meses.data_month} = date(2022, 7, 1)"
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: true
+    comparison_type: progress_percentage
+    comparison_reverse_colors: false
+    show_comparison_label: false
+    enable_conditional_formatting: true
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    custom_color: "#187006"
+    single_value_title: MAPE
+    conditional_formatting: [{type: greater than, value: 0.6, background_color: "#f7c59d",
+        font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0.3,
+        background_color: "#fa8f0b", font_color: "#ffe4b6", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
+        font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
+        strikethrough: false, fields: !!null ''}]
+    series_types: {}
+    defaults_version: 1
+    row: 15
+    col: 22
+    width: 2
+    height: 3
