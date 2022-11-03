@@ -1,4 +1,3 @@
-
 - dashboard: forecast_dashboard
   title: Forecast Dashboard
   layout: newspaper
@@ -7,11 +6,9 @@
   refresh: 1 hour
   preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
   embed_style:
-    #   background_color: "#0c4c12"
+    background_color: "#0c4c12"
     show_title: false
-    #   title_color: "#228b22"
-    tile_text_color: "#0c4c12"
-    #   tile_background_color: "#c8fac3"
+    tile_text_color: "#228b22"
   elements:
   - title: Untitled
     name: Untitled
@@ -181,9 +178,9 @@
       num_rows: 0
     font_size: '10'
     series_colors:
-      forecast_ia_unipar.Atual: "#0ad60f"
-      forecast_ia_unipar.Forecast_Unipar: "#a11a18"
-      forecast_ia_unipar.Forecast_IA: "#2111e8"
+      forecast_ia_unipar.Atual: "#19d61f"
+      forecast_ia_unipar.Forecast_Unipar: "#055416"
+      forecast_ia_unipar.Forecast_IA: "#e8720d"
     series_point_styles:
       forecast_ia_unipar.Forecast_IA: diamond
       forecast_ia_unipar.Forecast_Unipar: diamond
@@ -340,8 +337,8 @@
     series_types: {}
     series_colors:
       forecast_ia_unipar.Atual: "#0ad60f"
-      forecast_ia_unipar.Forecast_Unipar: "#a11a18"
-      forecast_ia_unipar.Forecast_IA: "#2111e8"
+      forecast_ia_unipar.Forecast_Unipar: "#055416"
+      forecast_ia_unipar.Forecast_IA: "#e8720d"
     ordering: none
     show_null_labels: false
     show_totals_labels: false
