@@ -86,6 +86,7 @@ view: tabela_para_looker_unipar {
       {% else %}
       <p style="color: #088004"><b>{{ rendered_value }}</b></p>
       {% endif %};;
+    value_format: "0%"
   }
 
   measure: MAPE_IA {
@@ -99,6 +100,7 @@ view: tabela_para_looker_unipar {
       {% else %}
       <p style="color: #088004"><b>{{ rendered_value }}</b></p>
       {% endif %};;
+    value_format: "0%"
   }
 
 }

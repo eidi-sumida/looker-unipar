@@ -30,11 +30,13 @@ view: forecast_tres_meses {
   dimension: mape {
     type: number
     sql: ${TABLE}.MAPE ;;
+    value_format: "0%"
   }
 
   dimension: wmape {
     type: number
     sql: ${TABLE}.WMAPE ;;
+    value_format: "0%"
   }
 
   measure: count {
