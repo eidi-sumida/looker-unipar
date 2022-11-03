@@ -5,12 +5,12 @@
   description: ''
   refresh: 1 hour
   preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
-  embed_style:
-    background_color: "#0c4c12"
-    show_title: false
-    #title_color: "#228b22"
-    tile_text_color: "#228b22"
-    tile_background_color: "#c8fac3"
+  # embed_style:
+  #   background_color: "#0c4c12"
+  #   show_title: false
+  #   #title_color: "#228b22"
+  #   tile_text_color: "#228b22"
+  #   tile_background_color: "#c8fac3"
   elements:
   - title: Untitled
     name: Untitled
@@ -35,8 +35,8 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 12
-    col: 18
+    row: 13
+    col: 16
     width: 4
     height: 3
   - title: Untitled
@@ -63,8 +63,8 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
-    col: 18
+    row: 16
+    col: 16
     width: 4
     height: 3
   - title: Untitled
@@ -90,8 +90,8 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 18
-    col: 18
+    row: 19
+    col: 16
     width: 4
     height: 3
   - title: Untitled (Copy 2)
@@ -127,9 +127,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 18
-    col: 22
-    width: 2
+    row: 19
+    col: 20
+    width: 4
     height: 3
   - title: Historical Demand x Forecast Unipar x Forecast IA
     name: Historical Demand x Forecast Unipar x Forecast IA
@@ -141,6 +141,8 @@
       forecast_ia_unipar.Forecast_IA]
     sorts: [forecast_ia_unipar.data_relativa_month]
     limit: 500
+    filter_expression: "${forecast_ia_unipar.data_relativa_month} >= date(2021, 8,\
+      \ 1)"
     x_axis_gridlines: true
     y_axis_gridlines: true
     show_view_names: false
@@ -178,9 +180,9 @@
       num_rows: 0
     font_size: '10'
     series_colors:
-      forecast_ia_unipar.Atual: "#024f08"
-      forecast_ia_unipar.Forecast_Unipar: "#0816a1"
-      forecast_ia_unipar.Forecast_IA: "#e8680f"
+      forecast_ia_unipar.Atual: "#0ad60f"
+      forecast_ia_unipar.Forecast_Unipar: "#a11a18"
+      forecast_ia_unipar.Forecast_IA: "#2111e8"
     series_point_styles:
       forecast_ia_unipar.Forecast_IA: diamond
       forecast_ia_unipar.Forecast_Unipar: diamond
@@ -192,10 +194,10 @@
     listen: {}
     row: 0
     col: 3
-    width: 15
-    height: 12
-  - title: Forecast table with values of MAPE
-    name: Forecast table with values of MAPE
+    width: 13
+    height: 19
+  - title: ''
+    name: ''
     model: demanda
     explore: tabela_para_looker_unipar
     type: looker_grid
@@ -228,21 +230,23 @@
     series_cell_visualizations:
       tabela_para_looker_unipar.Atual:
         is_active: false
+      tabela_para_looker_unipar.Forecast_Unipar:
+        is_active: false
     series_text_format:
       tabela_para_looker_unipar.Atual:
-        bg_color: "#93ba8b"
+        bg_color: "#c5e6c0"
       tabela_para_looker_unipar.MAPE_IA:
-        bg_color: "#93ba8b"
+        bg_color: "#c5e6c0"
       tabela_para_looker_unipar.MAPE_Unipar:
-        bg_color: "#93ba8b"
+        bg_color: "#c5e6c0"
       tabela_para_looker_unipar.Forecast_Unipar:
-        bg_color: "#b5d4a6"
+        bg_color: "#c5e6c0"
       tabela_para_looker_unipar.Forecast_IA:
-        bg_color: "#b5d4a6"
+        bg_color: "#c5e6c0"
       tabela_para_looker_unipar.data_month:
-        bg_color: "#b5d4a6"
-    header_font_color: "#29fd3c"
-    header_background_color: "#0c4c12"
+        bg_color: "#c5e6c0"
+    header_font_color: "#fcf5f9"
+    header_background_color: "#0a3d0e"
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_y_axis_labels: true
@@ -269,25 +273,27 @@
     hidden_fields: [tabela_para_looker_unipar.forecast_ia, tabela_para_looker_unipar.forecast_unipar,
       tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.atual]
     series_types: {}
+    title_hidden: true
     listen: {}
-    row: 12
+    row: 19
     col: 3
-    width: 15
-    height: 4
-  - name: ''
+    width: 13
+    height: 3
+  - name: " (2)"
     type: text
     title_text: ''
-    body_text: <img src="https://www.unipar.com/wp-content/uploads/2021/01/TCUNIPAR.LOGOS_.220722.RGB_logotype.pref_.png"
-      width="243" height="116"/>
+    subtitle_text: ''
+    body_text: <a href="https://www.unipar.com" target="_blank"><img src="https://github.com/eidi-sumida/looker-unipar/blob/master/logo.png?raw=true"
+      width="200" height="82"/> </a>
     row: 0
     col: 0
     width: 3
-    height: 4
+    height: 3
   - title: Last three months forecast
     name: Last three months forecast
     model: demanda
     explore: forecast_ia_unipar
-    type: looker_column
+    type: looker_line
     fields: [forecast_ia_unipar.atual, forecast_ia_unipar.data_relativa_month, forecast_ia_unipar.forecast_ia,
       forecast_ia_unipar.forecast_unipar, forecast_ia_unipar.Atual, forecast_ia_unipar.Forecast_IA,
       forecast_ia_unipar.Forecast_Unipar]
@@ -317,32 +323,32 @@
     label_density: 25
     x_axis_scale: ordinal
     y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: forecast_ia_unipar.Atual,
+            id: forecast_ia_unipar.Atual, name: Atual}, {axisId: forecast_ia_unipar.Forecast_IA,
+            id: forecast_ia_unipar.Forecast_IA, name: Forecast IA}, {axisId: forecast_ia_unipar.Forecast_Unipar,
+            id: forecast_ia_unipar.Forecast_Unipar, name: Forecast Unipar}], showLabels: true,
+        showValues: true, maxValue: 10000, minValue: 5500, unpinAxis: false, tickDensity: custom,
+        tickDensityCustom: 12, type: linear}]
+    limit_displayed_rows_values:
+      show_hide: hide
+      first_last: first
+      num_rows: 0
+    font_size: '13'
+    series_types: {}
+    series_colors:
+      forecast_ia_unipar.Atual: "#0ad60f"
+      forecast_ia_unipar.Forecast_Unipar: "#a11a18"
+      forecast_ia_unipar.Forecast_IA: "#2111e8"
     ordering: none
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: forecast_ia_unipar.Atual,
-            id: forecast_ia_unipar.Atual, name: Atual}, {axisId: forecast_ia_unipar.Forecast_IA,
-            id: forecast_ia_unipar.Forecast_IA, name: Forecast IA}, {axisId: forecast_ia_unipar.Forecast_Unipar,
-            id: forecast_ia_unipar.Forecast_Unipar, name: Forecast Unipar}], showLabels: true,
-        showValues: true, maxValue: 11000, minValue: 5000, unpinAxis: false, tickDensity: default,
-        tickDensityCustom: 5, type: linear}]
-    limit_displayed_rows_values:
-      show_hide: hide
-      first_last: first
-      num_rows: 0
-    font_size: '11'
-    series_types: {}
-    series_colors:
-      forecast_ia_unipar.Atual: "#024f08"
-      forecast_ia_unipar.Forecast_Unipar: "#0816a1"
-      forecast_ia_unipar.Forecast_IA: "#e8680f"
-    show_null_points: true
     groupBars: true
     labelSize: 10pt
     showLegend: true
-    interpolation: linear
     hidden_fields: [forecast_ia_unipar.forecast_ia, forecast_ia_unipar.forecast_unipar,
       forecast_ia_unipar.atual]
     defaults_version: 1
@@ -383,9 +389,9 @@
     labelColor: "#FFF"
     listen: {}
     row: 0
-    col: 18
-    width: 6
-    height: 12
+    col: 16
+    width: 8
+    height: 13
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: demanda
@@ -418,9 +424,9 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
-    row: 12
-    col: 22
-    width: 2
+    row: 13
+    col: 20
+    width: 4
     height: 3
   - title: Untitled (Copy 4)
     name: Untitled (Copy 4)
@@ -454,7 +460,7 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
-    row: 15
-    col: 22
-    width: 2
+    row: 16
+    col: 20
+    width: 4
     height: 3
