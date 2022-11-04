@@ -43,6 +43,36 @@ view: tabela_para_looker_unipar {
   sql: ${TABLE}.MAPE_ia ;;
   }
 
+  dimension: taxa_de_rendimento {
+    type: number
+    sql: ${TABLE}.taxa_de_rendimento ;;
+    value_format: "0.00%"
+  }
+
+  dimension: perda_potencial_UNIPAR {
+    type: number
+    sql: ${TABLE}.perda_potencial_UNIPAR ;;
+    value_format: "\"-R$\"#,##0.00"
+  }
+
+  dimension: perda_potencial_IA {
+    type: number
+    sql: ${TABLE}.perda_potencial_IA ;;
+    value_format: "\"-R$\"#,##0.00"
+  }
+
+  dimension: delta {
+    type: number
+    sql: ${TABLE}.delta ;;
+    value_format: "\"R$\"#,##0.00"
+  }
+
+  dimension: reducao_percentual {
+    type: number
+    sql: ${TABLE}.reducao_percentual ;;
+    value_format: "0.00%"
+  }
+
   measure: Forecast_IA{
     type:  number
     sql: ${TABLE}.forecast_ia ;;
@@ -101,6 +131,36 @@ view: tabela_para_looker_unipar {
       <p style="color: #088004"><b>{{ rendered_value }}</b></p>
       {% endif %};;
     value_format: "0%"
+  }
+
+  measure: Taxa_de_rendimento {
+    type: number
+    sql: ${TABLE}.taxa_de_rendimento ;;
+    value_format: "0.00%"
+  }
+
+  measure: Perda_potencial_UNIPAR {
+    type: number
+    sql: ${TABLE}.perda_potencial_UNIPAR ;;
+    value_format: "\"R$\"#,##0.00"
+  }
+
+  measure: Perda_potencial_IA {
+    type: number
+    sql: ${TABLE}.perda_potencial_IA ;;
+    value_format: "\"R$\"#,##0.00"
+  }
+
+  measure: Delta {
+    type: number
+    sql: ${TABLE}.delta ;;
+    value_format: "\"R$\"#,##0.00"
+  }
+
+  measure: Reducao_percentual {
+    type: number
+    sql: ${TABLE}.reducao_percentual ;;
+    value_format: "0.00%"
   }
 
 }
