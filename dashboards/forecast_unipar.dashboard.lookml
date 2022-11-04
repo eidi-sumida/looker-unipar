@@ -32,9 +32,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
-    col: 16
-    width: 4
+    row: 17
+    col: 15
+    width: 3
     height: 3
   - title: Untitled
     name: Untitled (2)
@@ -60,9 +60,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 18
-    col: 16
-    width: 4
+    row: 17
+    col: 18
+    width: 3
     height: 3
   - title: Untitled
     name: Untitled (3)
@@ -87,9 +87,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 21
-    col: 16
-    width: 4
+    row: 17
+    col: 21
+    width: 3
     height: 3
   - title: Untitled (Copy 2)
     name: Untitled (Copy 2)
@@ -124,9 +124,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 21
-    col: 20
-    width: 4
+    row: 20
+    col: 21
+    width: 3
     height: 3
   - title: Historical Demand x Forecast Unipar x Forecast IA
     name: Historical Demand x Forecast Unipar x Forecast IA
@@ -191,8 +191,8 @@
     listen: {}
     row: 3
     col: 0
-    width: 16
-    height: 18
+    width: 15
+    height: 17
   - title: ''
     name: ''
     model: demanda
@@ -216,8 +216,8 @@
     limit_displayed_rows: false
     enable_conditional_formatting: false
     header_text_alignment: left
-    header_font_size: '12'
-    rows_font_size: '12'
+    header_font_size: '14'
+    rows_font_size: '14'
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
     show_sql_query_menu_options: false
@@ -272,9 +272,9 @@
     series_types: {}
     title_hidden: true
     listen: {}
-    row: 21
+    row: 20
     col: 0
-    width: 16
+    width: 15
     height: 3
   - name: " (2)"
     type: text
@@ -386,9 +386,9 @@
     labelColor: "#FFF"
     listen: {}
     row: 3
-    col: 16
-    width: 8
-    height: 12
+    col: 15
+    width: 9
+    height: 14
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: demanda
@@ -422,9 +422,9 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 18
-    col: 20
-    width: 4
+    row: 20
+    col: 15
+    width: 3
     height: 3
   - title: Untitled (Copy 4)
     name: Untitled (Copy 4)
@@ -459,7 +459,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
-    col: 20
-    width: 4
+    row: 20
+    col: 18
+    width: 3
     height: 3
