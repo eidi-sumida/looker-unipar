@@ -4,7 +4,7 @@
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: bzyI26fXICQMf7RwuiUQHG
+  preferred_slug: 69D5HK4wPRABUVSmAm3W6C
   embed_style:
     background_color: "#e1e3e1"
     show_title: false
@@ -43,7 +43,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
+    row: 15
     col: 21
     width: 3
     height: 3
@@ -114,7 +114,7 @@
     hidden_fields: [forecast_ia_unipar.atual, forecast_ia_unipar.forecast_ia, forecast_ia_unipar.forecast_unipar]
     defaults_version: 1
     listen: {}
-    row: 2
+    row: 3
     col: 0
     width: 15
     height: 18
@@ -237,7 +237,7 @@
     series_types: {}
     title_hidden: true
     listen: {}
-    row: 20
+    row: 21
     col: 0
     width: 24
     height: 3
@@ -245,13 +245,13 @@
     type: text
     title_text: ''
     subtitle_text: ''
-    body_text: <div style="background-color:#02520d;width:100%;height:65px;padding:10px;
-      padding-left:20px"><a href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/logounipar.png"
-      width="111" height="45"/> </a></div>
+    body_text: <div style="background-color:#02520d;width:100%;height:90px;padding:18px;
+      padding-left:25px"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/logounipar.png"
+      width="133" height="54"/> </div>
     row: 0
     col: 0
     width: 24
-    height: 2
+    height: 3
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: demanda
@@ -285,7 +285,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
+    row: 15
     col: 15
     width: 3
     height: 3
@@ -322,7 +322,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 14
+    row: 15
     col: 18
     width: 3
     height: 3
@@ -417,7 +417,7 @@
       tabela_para_looker_unipar.forecast_unipar, tabela_para_looker_unipar.reducao_percentual]
     defaults_version: 1
     listen: {}
-    row: 2
+    row: 3
     col: 15
     width: 9
     height: 12
@@ -449,7 +449,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 17
+    row: 18
     col: 15
     width: 3
     height: 3
@@ -481,7 +481,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 17
+    row: 18
     col: 18
     width: 3
     height: 3
@@ -513,7 +513,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 17
+    row: 18
     col: 21
     width: 3
     height: 3
