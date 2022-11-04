@@ -6,6 +6,7 @@
   refresh: 1 hour
   preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
   embed_style:
+    background_color: "#e1e3e1"
     show_title: false
     tile_text_color: "#228b22"
   elements:
