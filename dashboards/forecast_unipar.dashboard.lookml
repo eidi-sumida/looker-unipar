@@ -1,5 +1,5 @@
-- dashboard: forecast_dashboard_imported
-  title: Forecast Dashboard (imported)
+- dashboard: forecast_dashboard
+  title: Forecast Dashboard
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -34,7 +34,7 @@
         font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}, {type: greater than, value: 0.3,
-        background_color: "#fa9e11", font_color: "#f1fff5", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+        background_color: "#fa9e11", font_color: "#ffffff", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
         font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -127,11 +127,11 @@
       tabela_para_looker_unipar.forecast_ia, tabela_para_looker_unipar.forecast_unipar,
       tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.perda_potencial_IA,
       tabela_para_looker_unipar.perda_potencial_UNIPAR, tabela_para_looker_unipar.reducao_percentual,
-      tabela_para_looker_unipar.taxa_de_rendimento, tabela_para_looker_unipar.Atual,
-      tabela_para_looker_unipar.Forecast_Unipar, tabela_para_looker_unipar.MAPE_Unipar,
-      tabela_para_looker_unipar.Perda_potencial_UNIPAR, tabela_para_looker_unipar.Forecast_IA,
+      tabela_para_looker_unipar.Atual, tabela_para_looker_unipar.Forecast_Unipar,
+      tabela_para_looker_unipar.MAPE_Unipar, tabela_para_looker_unipar.Forecast_IA,
       tabela_para_looker_unipar.MAPE_IA, tabela_para_looker_unipar.Reducao_percentual,
-      tabela_para_looker_unipar.Perda_potencial_IA, tabela_para_looker_unipar.Taxa_de_rendimento]
+      tabela_para_looker_unipar.Perda_potencial_UNIPAR, tabela_para_looker_unipar.Perda_potencial_IA,
+      tabela_para_looker_unipar.delta, tabela_para_looker_unipar.Delta]
     sorts: [tabela_para_looker_unipar.data_month]
     limit: 500
     show_view_names: false
@@ -144,7 +144,7 @@
     table_theme: transparent
     limit_displayed_rows: false
     enable_conditional_formatting: false
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '14'
     rows_font_size: '14'
     conditional_formatting_include_totals: false
@@ -155,7 +155,8 @@
     truncate_header: false
     series_labels:
       tabela_para_looker_unipar.data_month: Ano - Mês
-      tabela_para_looker_unipar.Reducao_percentual: Redução Percentual
+      tabela_para_looker_unipar.Reducao_percentual: Redução %
+      tabela_para_looker_unipar.Delta: Saving
     series_cell_visualizations:
       tabela_para_looker_unipar.Atual:
         is_active: false
@@ -164,6 +165,8 @@
       tabela_para_looker_unipar.Forecast_IA:
         is_active: false
       tabela_para_looker_unipar.Reducao_percentual:
+        is_active: false
+      tabela_para_looker_unipar.Perda_potencial_IA:
         is_active: false
     series_text_format:
       tabela_para_looker_unipar.Atual:
@@ -196,6 +199,8 @@
       tabela_para_looker_unipar.Perda_potencial_UNIPAR:
         bg_color: "#c5e6c0"
         fg_color: "#000000"
+      tabela_para_looker_unipar.Delta:
+        bg_color: "#c5e6c0"
     limit_displayed_rows_values:
       show_hide: hide
       first_last: first
@@ -228,7 +233,7 @@
     hidden_fields: [tabela_para_looker_unipar.forecast_ia, tabela_para_looker_unipar.forecast_unipar,
       tabela_para_looker_unipar.MAPE_ia, tabela_para_looker_unipar.MAPE_unipar, tabela_para_looker_unipar.atual,
       tabela_para_looker_unipar.perda_potencial_IA, tabela_para_looker_unipar.perda_potencial_UNIPAR,
-      tabela_para_looker_unipar.reducao_percentual, tabela_para_looker_unipar.taxa_de_rendimento]
+      tabela_para_looker_unipar.reducao_percentual, tabela_para_looker_unipar.delta]
     series_types: {}
     title_hidden: true
     listen: {}
@@ -265,7 +270,7 @@
     enable_conditional_formatting: true
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    custom_color: "#187006"
+    custom_color: "#0e3b02"
     single_value_title: MAPE
     conditional_formatting: [{type: greater than, value: 0.6, background_color: "#f7c59d",
         font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -274,7 +279,7 @@
         background_color: "#fa8f0b", font_color: "#ffe4b6", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
-        font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+        font_color: "#000000", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}]
     series_types: {}
@@ -302,7 +307,7 @@
     enable_conditional_formatting: true
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    custom_color: "#187006"
+    custom_color: "#0e3b02"
     single_value_title: MAPE
     conditional_formatting: [{type: greater than, value: 0.6, background_color: "#f7c59d",
         font_color: "#ff1b0c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
@@ -311,7 +316,7 @@
         background_color: "#fa8f0b", font_color: "#ffe4b6", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}, {type: greater than, value: 0, background_color: "#97f07f",
-        font_color: "#0c800c", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
+        font_color: "#0e3b02", color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
           palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
         strikethrough: false, fields: !!null ''}]
     series_types: {}
