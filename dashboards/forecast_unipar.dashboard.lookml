@@ -118,8 +118,8 @@
     col: 0
     width: 15
     height: 18
-  - title: ''
-    name: ''
+  - title: Resumo da Modelagem
+    name: Resumo da Modelagem
     model: demanda
     explore: tabela_para_looker_unipar
     type: looker_grid
@@ -235,13 +235,12 @@
       tabela_para_looker_unipar.perda_potencial_IA, tabela_para_looker_unipar.perda_potencial_UNIPAR,
       tabela_para_looker_unipar.reducao_percentual, tabela_para_looker_unipar.delta]
     series_types: {}
-    title_hidden: true
     listen: {}
     row: 21
     col: 0
     width: 24
-    height: 3
-  - name: " (2)"
+    height: 4
+  - name: ''
     type: text
     title_text: ''
     subtitle_text: ''
