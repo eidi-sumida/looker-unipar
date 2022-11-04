@@ -280,9 +280,9 @@
     type: text
     title_text: ''
     subtitle_text: ''
-    body_text: <p style="background-color=#228b22"><a href="https://www.unipar.com"
-      target="_blank"><img src="https://github.com/eidi-sumida/looker-unipar/blob/master/logo.png?raw=true"
-      width="200" height="72"/> </a></p>
+    body_text: <div style="background-color:#02520d;width:100%;height:95px;padding:15px"><a
+      href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/TCUNIPAR.LOGOS_.220722.RGB_logotype.pref_.png"
+      width="159" height="65"/> </a></div>
     row: 0
     col: 0
     width: 24
