@@ -1,5 +1,5 @@
-- dashboard: forecast_dashboard_imported
-  title: Forecast Dashboard (imported)
+- dashboard: forecast_dashboard
+  title: Forecast Dashboard
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
