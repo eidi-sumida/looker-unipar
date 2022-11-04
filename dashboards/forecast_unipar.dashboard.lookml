@@ -1,10 +1,10 @@
-- dashboard: forecast_dashboard
-  title: Forecast Dashboard
+- dashboard: forecast_dashboard_imported
+  title: Forecast Dashboard (imported)
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
   refresh: 1 hour
-  preferred_slug: IzW3Ijvaw5neP5Reb5yAkD
+  preferred_slug: bzyI26fXICQMf7RwuiUQHG
   embed_style:
     background_color: "#e1e3e1"
     show_title: false
@@ -43,12 +43,12 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
+    row: 14
     col: 21
     width: 3
     height: 3
-  - title: Historical Demand x Forecast Unipar x Forecast IA
-    name: Historical Demand x Forecast Unipar x Forecast IA
+  - title: Historical Demand (Actual) & IA Forecast & Unipar Forecast
+    name: Historical Demand (Actual) & IA Forecast & Unipar Forecast
     model: demanda
     explore: forecast_ia_unipar
     type: looker_line
@@ -99,6 +99,10 @@
       forecast_ia_unipar.Atual: "#00A826"
       forecast_ia_unipar.Forecast_Unipar: "#515151"
       forecast_ia_unipar.Forecast_IA: "#2350e8"
+    series_labels:
+      forecast_ia_unipar.Forecast_IA: IA Forecast
+      forecast_ia_unipar.Forecast_Unipar: Unipar Forecast
+      forecast_ia_unipar.Atual: Actual
     series_point_styles:
       forecast_ia_unipar.Forecast_IA: diamond
       forecast_ia_unipar.Forecast_Unipar: diamond
@@ -108,7 +112,7 @@
     hidden_fields: [forecast_ia_unipar.atual, forecast_ia_unipar.forecast_ia, forecast_ia_unipar.forecast_unipar]
     defaults_version: 1
     listen: {}
-    row: 3
+    row: 2
     col: 0
     width: 15
     height: 18
@@ -223,7 +227,7 @@
     series_types: {}
     title_hidden: true
     listen: {}
-    row: 21
+    row: 20
     col: 0
     width: 24
     height: 3
@@ -231,13 +235,13 @@
     type: text
     title_text: ''
     subtitle_text: ''
-    body_text: <div style="background-color:#02520d;width:100%;height:95px;padding:15px"><a
-      href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/TCUNIPAR.LOGOS_.220722.RGB_logotype.pref_.png"
-      width="159" height="65"/> </a></div>
+    body_text: <div style="background-color:#02520d;width:100%;height:65px;padding:10px"><a
+      href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/logounipar.png"
+      width="111" height="45"/> </a></div>
     row: 0
     col: 0
     width: 24
-    height: 3
+    height: 2
   - title: Untitled (Copy)
     name: Untitled (Copy)
     model: demanda
@@ -271,7 +275,7 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
+    row: 14
     col: 15
     width: 3
     height: 3
@@ -308,12 +312,12 @@
     series_types: {}
     defaults_version: 1
     listen: {}
-    row: 15
+    row: 14
     col: 18
     width: 3
     height: 3
-  - title: 'Last three months forecast '
-    name: 'Last three months forecast '
+  - title: 'Forecast - Last Three Months  '
+    name: 'Forecast - Last Three Months  '
     model: demanda
     explore: tabela_para_looker_unipar
     type: looker_line
@@ -403,7 +407,7 @@
       tabela_para_looker_unipar.forecast_unipar, tabela_para_looker_unipar.reducao_percentual]
     defaults_version: 1
     listen: {}
-    row: 3
+    row: 2
     col: 15
     width: 9
     height: 12
@@ -434,7 +438,8 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
-    row: 18
+    listen: {}
+    row: 17
     col: 15
     width: 3
     height: 3
@@ -465,7 +470,8 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
-    row: 18
+    listen: {}
+    row: 17
     col: 18
     width: 3
     height: 3
@@ -496,7 +502,8 @@
         strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
-    row: 18
+    listen: {}
+    row: 17
     col: 21
     width: 3
     height: 3
