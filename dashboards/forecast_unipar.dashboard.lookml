@@ -1,5 +1,5 @@
-- dashboard: forecast_dashboard
-  title: Forecast Dashboard
+- dashboard: forecast_dashboard_imported
+  title: Forecast Dashboard (imported)
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -47,8 +47,10 @@
     col: 21
     width: 3
     height: 3
-  - title: Historical Demand (Actual) & IA Forecast & Unipar Forecast
-    name: Historical Demand (Actual) & IA Forecast & Unipar Forecast
+  - title: Histórico de demandas (atual) & IA Forecast & Unipar Forecast - 08/21 ~
+      08/22
+    name: Histórico de demandas (atual) & IA Forecast & Unipar Forecast - 08/21 ~
+      08/22
     model: demanda
     explore: forecast_ia_unipar
     type: looker_line
@@ -83,18 +85,18 @@
     y_axis_combined: true
     show_null_points: true
     interpolation: linear
-    y_axes: [{label: Demand, orientation: left, series: [{axisId: forecast_ia_unipar.Atual,
-            id: forecast_ia_unipar.Atual, name: Atual}, {axisId: forecast_ia_unipar.Forecast_Unipar,
-            id: forecast_ia_unipar.Forecast_Unipar, name: Forecast Unipar}, {axisId: forecast_ia_unipar.Forecast_IA,
-            id: forecast_ia_unipar.Forecast_IA, name: Forecast IA}], showLabels: true,
+    y_axes: [{label: Demanda, orientation: left, series: [{axisId: forecast_ia_unipar.Atual,
+            id: forecast_ia_unipar.Atual, name: Atual}, {axisId: forecast_ia_unipar.Forecast_IA,
+            id: forecast_ia_unipar.Forecast_IA, name: IA Forecast}, {axisId: forecast_ia_unipar.Forecast_Unipar,
+            id: forecast_ia_unipar.Forecast_Unipar, name: Unipar Forecast}], showLabels: true,
         showValues: true, maxValue: 10500, minValue: 4000, valueFormat: '', unpinAxis: false,
         tickDensity: custom, tickDensityCustom: 12, type: linear}]
-    x_axis_label: Year - Month
+    x_axis_label: Ano - Mês
     limit_displayed_rows_values:
       show_hide: hide
       first_last: first
       num_rows: 0
-    font_size: '10'
+    font_size: '11'
     series_colors:
       forecast_ia_unipar.Atual: "#00A826"
       forecast_ia_unipar.Forecast_Unipar: "#515151"
@@ -102,7 +104,7 @@
     series_labels:
       forecast_ia_unipar.Forecast_IA: IA Forecast
       forecast_ia_unipar.Forecast_Unipar: Unipar Forecast
-      forecast_ia_unipar.Atual: Actual
+      forecast_ia_unipar.Atual: Atual
     series_point_styles:
       forecast_ia_unipar.Forecast_IA: diamond
       forecast_ia_unipar.Forecast_Unipar: diamond
@@ -151,6 +153,9 @@
     show_totals: true
     show_row_totals: true
     truncate_header: false
+    series_labels:
+      tabela_para_looker_unipar.data_month: Ano - Mês
+      tabela_para_looker_unipar.Reducao_percentual: Redução Percentual
     series_cell_visualizations:
       tabela_para_looker_unipar.Atual:
         is_active: false
@@ -235,8 +240,8 @@
     type: text
     title_text: ''
     subtitle_text: ''
-    body_text: <div style="background-color:#02520d;width:100%;height:65px;padding:10px"><a
-      href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/logounipar.png"
+    body_text: <div style="background-color:#02520d;width:100%;height:65px;padding:10px;
+      padding-left:20px"><a href="https://www.unipar.com" target="_blank"><img src="https://raw.githubusercontent.com/eidi-sumida/looker-unipar/master/logounipar.png"
       width="111" height="45"/> </a></div>
     row: 0
     col: 0
@@ -316,8 +321,8 @@
     col: 18
     width: 3
     height: 3
-  - title: 'Forecast - Last Three Months  '
-    name: 'Forecast - Last Three Months  '
+  - title: Forecast dos últimos três meses
+    name: Forecast dos últimos três meses
     model: demanda
     explore: tabela_para_looker_unipar
     type: looker_line
@@ -362,8 +367,8 @@
             name: Reducao Percentual}], showLabels: true, showValues: true, maxValue: 1,
         minValue: -5, unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
         type: linear}]
-    x_axis_label: Year - Month
-    font_size: '11'
+    x_axis_label: Ano - Mês
+    font_size: '12'
     series_types:
       tabela_para_looker_unipar.Atual: column
       tabela_para_looker_unipar.Forecast_IA: column
@@ -374,9 +379,9 @@
       tabela_para_looker_unipar.Forecast_IA: "#2350e8"
       tabela_para_looker_unipar.Reducao_percentual: "#f2f2f2"
     series_labels:
-      tabela_para_looker_unipar.Reducao_percentual: Percentage Decrease
+      tabela_para_looker_unipar.Reducao_percentual: Redução Percentual
       tabela_para_looker_unipar.Forecast_Unipar: Unipar Forecast
-      tabela_para_looker_unipar.Atual: Actual
+      tabela_para_looker_unipar.Atual: Atual
       tabela_para_looker_unipar.Forecast_IA: IA Forecast
     series_point_styles: {}
     x_axis_datetime_label: "%Y-%m"
